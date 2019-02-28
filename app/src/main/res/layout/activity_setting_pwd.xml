@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/new_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/reset_password_icon" />
+
+        <EditText
+            android:id="@+id/setPwd_oldPwdEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入你的旧密码"
+            android:textColorHint="#949494"
+            android:textSize="@dimen/textSize_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/dividerLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/reset_password_icon" />
+
+        <EditText
+            android:id="@+id/setPwd_newPwdEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请设置新密码 (至少6位)"
+            android:inputType="textPassword"
+            android:textColorHint="#949494"
+            android:textSize="@dimen/textSize_12" />
+
+        <ImageView
+            android:id="@+id/setPwd_newEyeIv"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@mipmap/close_eyes_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/dividerLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/reset_password_icon" />
+
+        <EditText
+            android:id="@+id/setPwd_repeatPwdEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请确认设置的新密码"
+            android:password="true"
+            android:textColorHint="#949494"
+            android:textSize="@dimen/textSize_12" />
+
+        <ImageView
+            android:id="@+id/setPwd_repeatEyeIv"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@mipmap/close_eyes_icon" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/dividerLine" />
+
+    <Button
+        android:id="@+id/setPwd_submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_new"
+        android:gravity="center"
+        android:text="完成设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_16" />
+</LinearLayout>

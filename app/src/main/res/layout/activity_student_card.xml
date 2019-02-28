@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zele.maipuxiaoyuan.ui.personalfrag.StudentCardActivity">
+
+    <include
+        android:id="@+id/activity_include"
+        layout="@layout/new_head" />
+
+    <FrameLayout
+        android:id="@+id/studentCard_headFl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/primaryBg"
+        android:layout_below="@+id/activity_include"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/studentCard_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/activity_include"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/studentCard_addFABtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/floating_add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+</RelativeLayout>

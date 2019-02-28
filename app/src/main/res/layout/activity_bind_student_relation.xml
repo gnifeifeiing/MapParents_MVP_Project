@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4bc775"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/bindRelation_backIv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/ic_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="绑定学生"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16" />
+
+        <ImageView
+            android:id="@+id/bindRelation_scanIv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_nav_scan_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@mipmap/bgcolor_green_bg"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/bindRelation_picIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="46dp" />
+
+        <TextView
+            android:id="@+id/bindRelation_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/bindRelation_picIv"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bindRelation_schoolTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bindRelation_nameTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/bindRelation_picIv"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bindRelation_idTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bindRelation_schoolTv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/bindRelation_picIv"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bindRelation_idTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="请核对学生信息是否正确"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:src="@mipmap/binding_students_down_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_1"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/cardnumber_input_icon"
+
+            />
+
+        <EditText
+            android:id="@+id/bindRelation_idNumEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:hint="请右上角扫码或输入学生证编号!"
+            android:textColor="#949494"
+            android:textSize="@dimen/textSize_14" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_1"
+        android:layout_marginLeft="16dp"
+        android:background="@color/dividerLine" />
+
+    <LinearLayout
+        android:id="@+id/bindRelation_relationLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/relationship_student_icon" />
+
+        <TextView
+            android:id="@+id/bindRelation_relationTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请选择您与学生的关系!"
+            android:textColor="#949494"
+            android:textSize="@dimen/textSize_14" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:padding="7dp"
+            android:src="@drawable/down_arrows" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/bindRelation_relationLL"
+        android:layout_marginLeft="16dp"
+        android:background="@color/dividerLine" />
+
+    <Button
+        android:id="@+id/bindRelation_submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/bindRelation_relationLL"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_new"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18" />
+</RelativeLayout>

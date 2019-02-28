@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primaryBg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/stuHealth_backIv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/ic_back_icon" />
+
+        <TextView
+            android:id="@+id/stuHealth_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15" />
+
+        <ImageView
+            android:id="@+id/stuHealth_changeIv"
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/kaoqin_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="@mipmap/heath_card_bg">
+
+        <TextView
+            android:id="@+id/stuHealth_weightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="105dp"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/text_6"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_heightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="230dp"
+            android:text=""
+            android:textColor="@color/text_6"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_eyeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_lungTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_qianquTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_50mTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="310dp"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/stuHealth_tiaoshengTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="370dp"
+            android:textColor="@color/text_3"
+            android:textSize="@dimen/textSize_14" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@color/text_6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/stuHealth_sexTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#989898"
+                    android:textSize="@dimen/textSize_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学期"
+                    android:textColor="@color/text_6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/stuHealth_termTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#989898"
+                    android:textSize="@dimen/textSize_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号"
+                    android:textColor="@color/text_6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/stuHealth_numTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#989898"
+                    android:textSize="@dimen/textSize_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生辰"
+                    android:textColor="@color/text_6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/stuHealth_shengTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#989898"
+                    android:textSize="@dimen/textSize_10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

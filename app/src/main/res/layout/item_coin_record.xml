@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/itemCoinRec_typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="123456622"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/textSize_14" />
+
+    <TextView
+        android:id="@+id/itemCoinRec_timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/itemCoinRec_typeTv"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:text="asdfghfds"
+        android:textColor="#999999"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:id="@+id/itemCoinRec_valueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="+100"
+        android:textColor="@color/text_4bc975"
+        android:textSize="@dimen/textSize_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:background="@color/dividerLine" />
+</RelativeLayout>

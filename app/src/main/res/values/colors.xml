@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primaryBg">#4bc975</color>
+    <color name="dividerLine">#eeeeee</color>
+    <!-- 按钮 -->
+    <color name="btnNoPressBg">#4bc975</color>
+    <color name="btnPressBg">#9ce1b2</color>
+    <color name="btnShadowBg">#eeeeee</color>
+
+    <!-- 文字 -->
+    <color name="text_black">#000000</color>
+    <color name="text_3">#333333</color>
+    <color name="text_6">#666666</color>
+    <color name="text_9">#999999</color>
+    <color name="text_4bc975">#4bc975</color>
+    <color name="title_hint">#717071</color>
+
+    <color name="red_new">#e95257</color>
+    <color name="harf_translucent">#80000000</color>
+
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="content_background">#f2f2f2</color>
+    <!-- 主页tab颜色 -->
+    <color name="mainTabBg">#f9f9f9</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 深灰色 -->
+    <color name="darkgray">#999999</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="holo_red_light">#ffff4444</color>
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dividerLine"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:background="@color/primaryBg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragPersonal_avatarIv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="32dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fragPersonal_avatarIv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="21dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@mipmap/ic_people_icon" />
+
+                        <TextView
+                            android:id="@+id/fragPersonal_userNameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_16"
+                            android:text="陈济钧"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_12" />
+
+                        <TextView
+                            android:id="@+id/fragPersonal_relationTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:text="家长"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="18dp"
+                            android:background="@mipmap/ic_phone_iconww" />
+
+                        <TextView
+                            android:id="@+id/fragPersonal_mobileTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_16"
+                            android:text="15036114092"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-2dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_wave_bg" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_scoreLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/myintegral_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="我的麦粒"/>
+
+                <TextView
+                    android:id="@+id/fragPersonal_coinTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryBg"
+                    android:textSize="@dimen/textSize_12" />
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_healthLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/heath_card_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="健康卡"/>
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_changeStuCardLl"
+                android:layout_marginTop="6dp"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/swith_idcard_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="切换学生证"/>
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_stuManageLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/information_message_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="学生信息管理"/>
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_giftHouseLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/maillist_idcard_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="礼品屋"/>
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_helpLl"
+                android:layout_marginTop="6dp"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/help_feedback_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="帮助与反馈"/>
+
+                <ImageView
+                    style="@style/PersonalFragmentLeftImgStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_aboutOurLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/about_us_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="关于我们"/>
+
+                <TextView
+                    android:id="@+id/fragPersonal_versionCodeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:text=""
+                    android:textColor="@color/primaryBg" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16"/>
+
+            <LinearLayout
+                android:id="@+id/fragPersonal_clearLl"
+                style="@style/PersonalFragmentLinearLayoutStyle">
+
+                <ImageView
+                    style="@style/PersonalFragmentRightImgStyle"
+                    android:background="@mipmap/cache_cleaner_icon" />
+
+                <TextView
+                    style="@style/PersonalFragmentTextviewStyle"
+                    android:text="清除缓存"/>
+
+                <TextView
+                    android:id="@+id/fragPersonal_cacheTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/primaryBg"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragPersonal_exitTv"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="35dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/text_3"
+                android:textSize="@dimen/textSize_14" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

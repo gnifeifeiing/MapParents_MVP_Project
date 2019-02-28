@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/giftLibItem_giftDetailCv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/itemBook_nameLl"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/itemBook_unreadView"
+                android:layout_width="6dp"
+                android:visibility="invisible"
+                android:layout_height="6dp"
+                android:background="@drawable/circle_red" />
+            <TextView
+                android:id="@+id/itemBook_subjectsNameTv"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="ssss"
+                android:maxLength="15"
+                android:textColor="#323333"
+                android:textSize="@dimen/textSize_14" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/itemBook_classNameTv"
+            android:paddingLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="180dp"
+            android:text="22222222222222222222"
+            android:textSize="@dimen/textSize_10"
+            android:textColor="#989898"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/itemBook_nameLl" />
+        <TextView
+            android:id="@+id/itemBook_dateTv"
+            android:layout_alignBaseline="@id/itemBook_classNameTv"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="dfghgf"
+            android:layout_marginRight="12dp"
+            android:textColor="#989898"
+            android:textSize="@dimen/textSize_10" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_below="@id/itemBook_classNameTv"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/itemBook_messageTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/textSize_12"
+                android:textColor="#666666"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/itemBook_soundShowBtn"
+                android:layout_below="@id/itemBook_classNameTv"
+                android:layout_marginTop="10dp"
+                style="@style/SoundBtnStyle"
+                android:visibility="gone" />
+
+            <com.zele.maipuxiaoyuan.common.patriarch.NineGridTestLayout
+                android:id="@+id/itemBook_nineGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:sapcing="6dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="1.3dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/itemBook_confirmTv"
+            android:layout_below="@id/divider"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textSize_12"
+            android:textColor="@color/primaryBg"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:text="确认已读" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

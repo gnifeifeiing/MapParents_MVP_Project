@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 扫描窗口 -->
+
+    <com.zele.maipuxiaoyuan.scans.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 顶部条栏 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/primaryBg" >
+
+        <ImageView
+            android:id="@+id/mbutton_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/ic_back_icon"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/mtextview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mbutton_back"
+            android:layout_alignBottom="@+id/mbutton_back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="扫一扫"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_18" />
+    </RelativeLayout>
+
+
+
+     <TextView
+        android:id="@+id/status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="150dp"
+      
+        android:textColor="@color/white" />
+
+</merge>

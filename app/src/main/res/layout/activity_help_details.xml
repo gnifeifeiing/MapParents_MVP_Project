@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zele.maipuxiaoyuan.ui.personalfrag.HelpDetailsActivity">
+
+    <include
+        layout="@layout/new_head"/>
+
+    <TextView
+        android:id="@+id/helpD_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:text="texx"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/text_3"
+        android:textSize="@dimen/textSize_14"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <WebView
+        android:id="@+id/helpD_webView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>

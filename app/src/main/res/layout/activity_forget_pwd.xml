@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/ic_phone_login"
+                android:visibility="visible" />
+            <EditText
+                android:id="@+id/forgetPwd_phoneEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/textSize_14" >
+            </EditText>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/dividerLine"
+                />
+
+            <com.zele.maipuxiaoyuan.common.views.TimeButton
+                android:id="@+id/forgetPwd_timeBtn"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="获取验证码"
+                android:textColor="@color/primaryBg"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerLine"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/layout_class"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="18dp"
+                android:background="@mipmap/ic_safety_icon" />
+
+
+            <EditText
+                android:id="@+id/forgetPwd_codeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@null"
+                android:textSize="@dimen/textSize_14"
+                android:layout_marginLeft="@dimen/margin">
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerLine"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            />
+        <LinearLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/ic_lock_icon"
+                android:layout_marginLeft="@dimen/margin"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/forgetPwd_pwdEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:hint="请输入您的新密码"
+                android:inputType="textPassword"
+
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textSize="@dimen/textSize_14"
+                android:textCursorDrawable="@null"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical">
+            </EditText>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerLine"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            />
+
+        <Button
+            android:id="@+id/forgetPwd_okBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/btn_margin"
+            android:background="@drawable/btn_new"
+            android:text="确认"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textSize_18"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>

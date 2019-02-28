@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@color/primaryBg" />
+
+    <include
+        android:id="@+id/activity_include"
+        layout="@layout/new_head" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/patriarchShare_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/primaryBg"
+        app:tabSelectedTextColor="@color/primaryBg"
+        app:tabIndicatorHeight="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/dividerLine"/>
+
+    <!--加载失败-->
+    <RelativeLayout
+        android:id="@+id/patriarchShare_errorRefreshRl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ease_login_error_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="加载失败,点击重试"
+                android:textSize="@dimen/textSize_15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--新消息-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/patriarchShare_remindRl"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="174dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/radis_rectangle_black">
+        <ImageView
+            android:id="@+id/patriarchShare_circleHeadIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/remind_point" />
+        <TextView
+            android:id="@+id/patriarchShare_msgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1条新消息"
+            android:textSize="@dimen/textSize_12"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_arrow_white_icon"/>
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/patriarchShare_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/patriarchShare_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

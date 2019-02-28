@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFg_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f3f5">
+
+            <com.youth.banner.Banner
+                android:id="@+id/mainFg_banner"
+                android:layout_width="match_parent"
+                android:layout_height="209dp" />
+
+            <include
+                android:id="@+id/mainFg_middleCrad"
+                layout="@layout/main_first_fragment_middle_layout" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/mainFg_middleCrad"
+                android:paddingBottom="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="常用操作"
+                    android:textColor="@color/text_3"
+                    android:textSize="@dimen/textSize_14" />
+
+                <LinearLayout
+                    android:id="@+id/mainFg_gridOneLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_zuoYeRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/homework_home_icon"
+                            android:gravity="center"
+                            android:text="作业"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_scoreRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/mark_home_icon"
+                            android:text="考试成绩"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/mainFg_remindExamTv"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/remind_point"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_kaoqinRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/attend_home_icon"
+                            android:gravity="center"
+                            android:text="考勤"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/mainFg_remindAttendTv"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/remind_point"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_reportRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/quality_home_icon"
+                            android:text="综合素质报告"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainFg_gridTwoLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_classArrangeRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/timetable_home_icon"
+                            android:gravity="center"
+                            android:text="课程表"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_starRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/record_home_icon"
+                            android:gravity="center"
+                            android:text="星级评价"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_contactsRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@mipmap/addresslist_home_icon"
+                            android:gravity="center"
+                            android:text="通讯录"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainFg_unknowRl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_home_btn">
+
+                        <ImageView
+                            android:id="@+id/mainFg_unknowIconIv"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="18dp"
+                            android:src="@mipmap/comingsoon_home_icon" />
+
+                        <TextView
+                            android:id="@+id/mainFg_unknowNameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mainFg_unknowIconIv"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="6dp"
+                            android:text="敬请期待"
+                            android:textColor="@color/text_6"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

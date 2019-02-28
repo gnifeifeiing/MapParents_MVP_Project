@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zele.maipuxiaoyuan.ui.personalfrag.HelpActivity">
+
+    <include
+        layout="@layout/new_head"/>
+
+    <ListView
+        android:id="@+id/help_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:listSelector="#00000000"/>
+
+    <ImageView
+        android:id="@+id/help_empty"
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/preload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
